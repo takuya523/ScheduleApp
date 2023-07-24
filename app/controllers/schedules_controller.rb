@@ -40,7 +40,7 @@ class SchedulesController < ApplicationController
   def destroy
     @schedule = Schedule.find(params[:id])
     @schedule.destroy
-    flash[:notice] = 'スケジュールが削除されました。'
+    flash[:notice] = 'スケジュールを削除しました。'
     redirect_to schedules_path, status: :see_other
   end
 
